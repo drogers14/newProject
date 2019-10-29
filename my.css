@@ -1,0 +1,424 @@
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background-color: #33cccc;
+	position:absolute;
+}
+
+li {
+	font-family: 'Helvetica Neue', sans-serif;
+	margin-right: 1px;
+	float: left;
+	display:inline-block;
+}
+
+li a {
+	display:block;
+	min-width: 140px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	color: #fff;
+	text-decoration: none;
+	display: block;
+	transition: 0.25s;
+
+}
+/* Style for dropdown links*/
+
+li:hover ul a {
+	color: #2f3036;
+	height: 40px;
+	line-height: 40px;
+}
+
+/* Hover state for dropdown links */ 
+li:hover ul a:hover {
+	background: #bf80ff;
+	color: #fff;
+}
+
+/*Hide dropdown links until they are need */
+li ul {
+	display: none;
+}
+
+/*Make dropdown links vertical */
+
+li ul li {
+	display: block; 
+	float: none; 
+}
+
+/*Prevent text wrapping */
+li ul li a {
+	width: auto; 
+	min-width: 100px; 
+	padding: 0 20px; 
+}
+
+/*Display the dropdown on hover */
+ul li a:hover + .hidden, .hidden:hover {
+	display: block; 
+	z-index:1;
+}
+td a:hover{
+	background-color: #9f80ff;
+}
+
+li a:hover{
+	background-color: #9f80ff;
+}
+
+a{
+	text-decoration: none;
+	display:block;
+	position:relative;
+}
+
+.active {
+	background-color: #99e6e6;
+	/*  color: white;*/
+}
+
+.header {
+	text-align: center;
+	margin-bottom:100px;
+}
+.column {
+	float:left;
+	width:33.33%;
+	padding: 15px;
+	box-sizing: border-box;
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+	.column {
+		width: 100%;
+	}
+}
+
+h1{
+	color: #111;
+	font-family: 'Helvetica Neue', sans-serif;
+	font-size: 60px;
+	font-weight: bold;
+	letter-spacing: -1px;
+	text-align: width:40%
+	float: left;
+	margin-top:0;
+	padding-top:50px;
+}
+
+body{
+	background-color: #ff8080;
+	padding:15px;
+	margin:0;
+}
+
+h2{
+	font-size: 40px;
+	font-family: 'Helvetica Neue', sans-serif;
+	font-weight: bold;
+	color: #fff;
+	letter-spacing: -1px;
+	text-align: width:40%
+	text-shadow: 2px 2px #80ff80;
+}
+
+h3{
+	font-size: 30px;
+	font-family: 'Helvetica Neue', sans-serif;
+	font-weight: bold;
+	color: #fff;
+	letter-spacing: -1px;
+	text-align: width:40%
+	text-shadow: 0 0 5px #000;
+	padding: 10px;
+}
+
+h4{
+	font-size: 20px;
+	font-family: 'Helvetica Neue', sans-serif;
+	font-weight: bold;
+	color: #55f5f5;
+	letter-spacing: -1px;
+	text-align: width:40%
+}
+
+p{
+	font-family: 'Helvetica Neue', sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	letter-spacing: -1px;
+	text-align: width:40%
+}
+
+.randomFacts img{
+	width:100%;
+	height:auto;
+	z-index:-1;
+	top:0;
+}
+
+table {
+	border-collapse: collapse;
+	font-family: 'Helvetica Neue', sans-serif;
+	width: 100%;
+}
+
+th, td {
+	font-family: 'Helvetica Neue', sans-serif;
+	text-align: left;
+	padding: 8px;
+}
+
+tr:nth-child(even){
+	font-family: 'Helvetica Neue', sans-serif;
+background-color: #f2f2f2}
+
+th {
+	font-family: 'Helvetica Neue', sans-serif;
+	background-color: #8080ff;
+	color: white;
+}
+
+.container {
+	position: relative;
+	overflow: hidden;
+}
+
+.image {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.overlay {
+	position: absolute;
+	bottom: 0;
+	left: 100%;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	transition: .5s ease;
+	background-color: #9f80ff;
+	overflow: hidden;
+}
+
+.container:hover .overlay {
+	left: 0;
+}
+
+.text {
+	font-family: 'Helvetica Neue', sans-serif;
+	color: white;
+	font-size: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+.parallax {
+	/* The image used */
+	background-image: url("https://static01.nyt.com/images/2017/12/21/climate/21CLI-BEAVERS/merlin_131321107_e96f4279-5637-404a-b092-261b19d09bcd-superJumbo.jpg?quality=90&auto=webp");
+
+	/* Set a specific height */
+	min-height: 500px;
+
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	font-family: 'Helvetica Neue', sans-serif;
+	background-size: cover;
+	position:relative;
+}
+
+.caption {
+	font-family: 'Helvetica Neue', sans-serif;
+	position: absolute;
+	top: 50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	width: 100%;
+	text-align: center;
+	color: #000;
+}
+
+.caption span.border {
+	font-family: 'Helvetica Neue', sans-serif;
+	background-color: #111;
+	color: #fff;
+	padding: 18px;
+	font-size: 25px;
+	letter-spacing: 10px;
+}
+
+.home{
+	color:#80ff80;
+}
+.footer {
+	position:absolute ;
+	display: block;
+	left: 0;
+	max-height:300px;
+	bottom: 0;
+	width: 100%;
+	background-color:#ffca12;
+	color: #809fff;
+	text-align: center;
+}
+
+.helpme{
+	height: 50px;
+	position: relative;
+}
+
+.ok{
+	text-align: center;
+	background-color: #FCF3ED;
+	padding:10px;
+}
+.pushdatfoot{
+	padding-bottom:300px;
+	position:relative;
+}
+
+.fontinsert{
+
+}
+#toTop {
+	position: fixed;
+	z-index: 1000;
+	bottom: 20px;
+	right: 20px;
+	margin: 0;
+	padding: 14px 12px;
+	display: none;
+	cursor: pointer;
+	background: #222;
+	color: #fff !important;
+	border-radius: 3px;
+	transform: rotate(-90deg);
+	font-size: 24px;
+	text-align: center;
+}
+
+#holder{
+	-moz-user-select: -moz-none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	background: white;
+	padding: 10px;
+	width: 250px;
+	margin: 0 auto;
+	position: relative;
+	top: 50%;
+	transform: translateY(-65%);
+	box-shadow: 0px 3px 8px rgba(0,0,0,0.25);
+	border-radius: 2px;
+}
+
+.button {
+	display: inline-block;
+	border-radius: 4px;
+	background-color: #85a7ff;
+	border: none;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 28px;
+	padding: 20px;
+	width: 220px;
+	transition: all 0.5s;
+	cursor: pointer;
+	margin: 5px;
+}
+
+.button span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+
+.button span:after {
+	content: '\1f63b';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+}
+
+.button:hover span {
+	padding-right: 25px;
+}
+
+.button:hover span:after {
+	opacity: 1;
+	right: 0;
+}
+.button2 {
+	display: inline-block;
+	border-radius: 4px;
+	background-color: #80ffa4;
+	border: none;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 28px;
+	padding:20px ;
+	width: 220px;
+	transition: all 0.5s;
+	cursor: pointer;
+	margin: 5px;
+}
+
+.button2 span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+}
+
+.button2 span:after {
+	content: '\1f640';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+}
+
+.button2:hover span {
+	padding-right: 25px;
+}
+
+.button2:hover span:after {
+	opacity: 1;
+	right: 0;
+}
+h6{
+	font-size:300px;
+}
+.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.cuteButton{
+	background-color: white;
+  color: black;
+  border: 2px solid #74D2E8;
+  }
+
+

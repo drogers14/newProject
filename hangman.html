@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+				<link rel="stylesheet" href="my.css">
+	</head>
+	<body style="text-align: center">
+		<div class="header">
+			<ul id="nav">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="playlists.html">Playlists</a></li>
+				<li><a href="#animals">Animals</a></li>
+				<li><a href="randomFacts.html">Random Facts</a></li>
+				<li class="active"><a href="hangman.html">Game</a></li>
+				<li><a href="#">Resources</a><ul class="hidden">
+						<li><a href="https://www.worldwildlife.org/">WWF</a></li>
+						<li><a href="http://mentalfloss.com/">Mental Floss</a></li>
+					</ul></li>
+			</ul>
+		</div>
+		</div>
+		<h1>A Word Guessing Game</h1>
+		<p style="color:#8EFFAF">Are you kitten me right meow</p>
+		<br> Press NEW GAME and guess the word correctly or poptart cat will appear.</br>
+
+		<canvas id="stickman" width="578" height="200">This text will show if the browser does NOT support HTML5 Canvas tag</canvas>
+		<script src="hangman.js"></script>
+		<!--start a game-->
+		<p style="font-size:50px;" id="newgame"></p>
+		<p style="font-size:50px; color:#3640B3"id="result"></p>
+		<div style="text-align: center" id="buttons" ></div>
+		<h3><br>Letters Already Guessed: <span style="color:#82CC43" id="lettersGuessed"></span></br></h3>
+		<br id="totalwins"></br>
+		<p id="showlives"></p>
+		<button onclick="newGame()" class="button"><span>New Game</span></button>
+		<button id="guessWord" onclick="guessWord();"class="button2"><span>Guess Word</span></button>
+		</div>
+
+
+
+	</body>
+</html>
